@@ -13,3 +13,16 @@ The development branch is used as the basis for the QA and PTR realms. 开发分
 Once the development branch has been tested by QA, it will be merged with the stable branch to become the next revision for the live realms. 一旦开发分支被问答团队测试通过，将合并到稳定分支成为下一个活动的修正版。The only changes accepted to the stable branch, outside of the merge window, will be critical hotfixes to resolve game-breaking and stability issues.稳定分支仅接受这样的变更，合并窗口期外，只解决游戏终端和稳定性问题的关键热修补。
 
 As with any open source project, the workflow is subject to change as we receive feedback and discover what works best for the project and its contributors.正如任何一个开源项目，工作流程变更也会发生，当我们收到反馈且发现存在更有利项目和代码贡献者的方法时。
+
+# Resource Extract资源提取
+ad.exe -i D:\game\WoW1.12.1\
+
+vmapextractor.exe -d D:\game\WoW1.12.1\Data
+
+md vmaps
+
+vmap_assembler.exe Buildings vmaps
+
+md mmaps
+
+MoveMapGen.exe --quick --silence
