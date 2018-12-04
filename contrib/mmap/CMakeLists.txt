@@ -31,6 +31,8 @@ include_directories(
     ../../src/game/vmap
     ../../dep/include/g3dlite
     ../../src/framework
+    ../../dep/include
+    ${ACE_INCLUDE_DIR}
     ../../dep/ACE_wrappers
     ../../objdir/dep/ACE_wrappers
     ../../dep/recastnavigation/Detour/Include

@@ -144,6 +144,12 @@ unset(ACE_INCLUDE_DIR)
 unset(ACE_LIBRARIES)
 unset(ACE_LIBRARIES_DIR)
 
+# Win32 ACE packages
+if(WIN32)
+  set(ACE_ROOT $ENV{ACE_ROOT})
+  set(ACE_INCLUDE_DIR $ENV{ACE_INCLUDE_DIR})
+endif()
+
 find_package(ACE)
 if(NOT ACE_FOUND)
   message(FATAL_ERROR
