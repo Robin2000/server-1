@@ -25,4 +25,4 @@ vmap_assembler.exe Buildings vmaps
 
 md mmaps
 
-MoveMapGen.exe --quick --silence
+MoveMapGen.exe --quick --silent
