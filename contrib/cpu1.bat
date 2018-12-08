@@ -1,0 +1,1 @@
+MoveMapGen.exe 1 --silent --quick
